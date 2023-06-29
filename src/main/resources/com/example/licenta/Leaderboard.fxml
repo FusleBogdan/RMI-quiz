@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.licenta.LeaderboardController">
+    <TableView fx:id="leaderboardTable" layoutX="154.0" layoutY="73.0" onSort="#initialize" prefHeight="504.0" prefWidth="403.0" style="-fx-background-color: white;" styleClass="table-cell" stylesheets="@../../../style.css">
+        <columns>
+            <TableColumn fx:id="usernameColumn" prefWidth="119.0" text="Username">
+                <cellValueFactory>
+                    <PropertyValueFactory property="username" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="topicColumn" prefWidth="184.0" text="Topic">
+                <cellValueFactory>
+                    <PropertyValueFactory property="topic" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="correctAnswersColumn" prefWidth="99.0" text="Correct Answers">
+                <cellValueFactory>
+                    <PropertyValueFactory property="correctAnswers" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</AnchorPane>
+

@@ -1,0 +1,38 @@
+#image-view {
+    -fx-background-radius: 50%;
+    -fx-background-color: white;
+}
+
+#image-view > .image-container {
+    -fx-background-image: url("img/cinele.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-shape: "M0,0 H1 V1 H0 Z";
+}
+
+
+body {
+
+}
+
+/* styles.css */
+
+.table-view {
+    -fx-background-color: #F5F5F5;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+}
+
+.table-row-cell {
+    -fx-font-size: 15px;
+    -fx-text-fill: #000000;
+}
+
+.table-column {
+    -fx-background-color: #FFFFFF;
+}
+
+.table-cell {
+    -fx-border-color: #DDDDDD;
+}
